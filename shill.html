@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>SHILLELAGH</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  </head>
+  <body>
+    <script type="text/javascript">
+
+      function show_image(src, height) {
+          var img = document.createElement("img");
+          img.src = src;
+          img.height = height;
+
+          // This next line will just add it to the <body> tag
+          document.body.appendChild(img);
+      }
+      var cant = 9;
+      var pick = Math.floor(Math.random()*cant)+1;
+      show_image("shills/shill_0"+pick+".jpg",300);
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!--
+
+        @{Boe|wtype}&{template:dmg} {{rname=Entangle}} 0 {{range=20ft circle}} {{save=1}} {{saveattr=Strength}} {{savedesc=or be trapped...}} {{savedc=[[[[(@{Dube|spell_save_dc})]][SAVE]]]}} {{desc=[x](https://thumbs.dreamstime.com/b/buddha-head-tree-wat-maha-ayutthaya-buddha-statue-trapped-bodhi-tree-roots-ayutthaya-historical-park-86416135.jpg)
+
+        Plants turn the ground into difficult terrain. Creatures in the area when you cast the spell must succeed on a Strength saving throw or be restrained until the spell ends. A restrained creature can use its action to make additional Strength checks.}}}
+
+
+
+        @{Dube|wtype}&{template:spell} {{level=abjuration cantrip}}  {{name=Shillelagh}} {{duration=1 minute}} {{description=The wood of a club or quarterstaff you are holding is imbued with nature’s power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon’s damage die becomes a d8. The weapon also becomes magical, if it isn’t already. The spell ends if you cast it again or if you let go of the weapon.}} 1
+
+
+
+
+
+        @{Boe|wtype}&{template:dmg} {{rname=Shillelagh}} {{save=1}} {{saveattr=There is no}} {{savedesc=Hahahaha}} {{desc=[x](https://babelniche.files.wordpress.com/2010/11/shillelagh.jpg)}}}
+-->
+  </body>
+</html>
